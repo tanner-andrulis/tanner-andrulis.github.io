@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Tanner Andrulis"
+  navbar:
+    right:
+      # - about.qmd
+      - CV.qmd
+      - contact.qmd
+      - icon: linkedin
+        text: LinkedIn
+        href: https://www.linkedin.com/in/tanner-andrulis/
+      - icon: github
+        text: Github
+        href: https://github.com/tanner-andrulis
+      - text: Google Scholar
+        href: https://scholar.google.com/citations?user=XfB5uRsAAAAJ
+format:
+  html:
+    theme: litera
+    css: styles.css
+    page-layout: full

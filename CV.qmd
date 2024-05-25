@@ -1,0 +1,79 @@
+---
+title: "CV"
+page-layout: full
+about:
+  template: solana
+listing:
+  contents: posts
+  sort: "date desc"
+  type: table
+---
+
+## Tanner Andrulis
+
+<hr style="border:2px solid gray">
+
+## Education
+
+<hr style="border:2px solid gray">
+
+- **2021-2027 *est.*** Ph.D. Electrical Engineering & Computer Science. Massachusetts Institute of Technology
+- **2021-2023** M.S. Electrical Engineering & Computer Science. Massachusetts Institute of Technology
+  -	5.0/5.0 GPA
+- **2017-2021** B.S Computer Engineering, Purdue University West Lafayette
+  - 3.97/4.0 GPA, Graduated Summa Cum Laude
+- **2017-2021** B.S Mathematics, Purdue University
+  - 3.97/4.0 GPA, Graduated Summa Cum Laude
+
+## Publications
+
+<hr style="border:2px solid gray">
+
+## Work Experience
+
+- **May-August 2020** Digital Hardware Intern, Qualcomm Technologies, Incorporated
+  - Worked with the digital design infrastructure team to develop processor-memory interface systems.
+  -	Developed tools to automate digital design processes for processor-memory interface systems.
+- **May-August 2019** Software and Controls Intern, Eaton Corporation
+  - Developed diagnostic software and automating scripts to improve testing process of semi-truck control software.
+  - Authored tools for retrieval of memory contents and diagnosis of errors in semi-truck computer memory.
+
+<hr style="border:2px solid gray">
+
+## Teaching
+
+- **2024** Graduate Teaching Assistant, MIT  6.5930 Hardware Architectures for Deep Learning
+- **2021** Undergraduate Teaching Assistant, Purdue ECE 50863-EDX Computer Network Systems  
+  - Led the design of new student programming projects based on cutting-edge computer network research.
+  - Tested and modified student assignments for online instruction.
+  - Designed systems to support Internet Systems Lab research.  Implemented lightweight methods to enable transmission and sharing of flows over multiple tunnels in software-defined networks.
+
+<hr style="border:2px solid gray">
+
+## Selected Awards
+- **2024** Samsung Semiconductor Fellowship
+- **2024** ISPASS 2024 Best Paper Award: "CiMLoop: A Flexible, Accurate, and Fast Compute-In-Memory Modeling Tool"
+- **2022** MIT Siebels Scholar Fellowship
+- **2021** MIT Irwin Mark Jacobs and Joan Klein Jacobs Presidential Fellow
+- **2021** Purdue Undergraduate Excellence Award awarded for contributions in creating the ECE-50863 EDX Course
+- **2017** Purdue Fessenden Trott Scholarship
+- **2017** Purdue Presidential Scholarship
+
+<hr style="border:2px solid gray">
+
+## Activities
+- **2021-Present** MIT Rock Climbing Team
+- **2021-Present** MIT GSB Organizer
+  - Social event organizer for the MIT Computer Science & Artificial Intelligence Laboratory (CSAIL).
+- **2021-2023** MIT Edgerton House Board Member and Resources Chair	
+- **2029-2021** Purdue IEEE Remote Operated Vehicle Team
+  - Designed control algorithms for autonomous submarine thruster systems. Enabled submarine to do a backflip for the first time in competition.
+  - Developed computer vision algorithms that enabled autonomous submarine to recognize and react to underwater objects.
+- **2018-2019** Purdue IEEE Aerial Robotics Team
+  - Lead designer of collision-avoidance algorithms to pilot autonomous planes.
+
+<hr style="border:2px solid gray">
+
+## Publications and Talks
+
+---

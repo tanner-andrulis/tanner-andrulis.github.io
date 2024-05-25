@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "posts/2024_cimloop/post.html",
+    "href": "posts/2024_cimloop/post.html",
+    "title": "CiMLoop: A Flexible, Accurate, and Fast Compute-In-Memory Modeling Tool. ISPASS 2024",
+    "section": "",
+    "text": "ISPASS 2024 Best Paper Award Winner\nCompute-In-Memory (CiM) is a promising solution to accelerate Deep Neural Networks (DNNs) as it can avoid energy-intensive DNN weight movement and use memory arrays to perform low-energy, high-density computations. These benefits have inspired research across the CiM stack, but CiM research often focuses on only one level of the stack (i.e., devices, circuits, architecture, workload, or mapping) or only one design point (e.g., one fabricated chip). There is a need for a full-stack modeling tool to evaluate design decisions in the context of full systems (e.g., see how a circuit impacts system energy) and to perform rapid early-stage exploration of the CiM co-design space.\nTo address this need, we propose CiMLoop: an open-source tool to model diverse CiM systems and explore decisions across the CiM stack. CiMLoop introduces (1) a flexible specification that lets users describe, model, and map workloads to both circuits and architecture, (2) an accurate energy model that captures the interaction between DNN operand values, hardware data representations, and analog/digital values propagated by circuits, and (3) a fast statistical model that can explore the design space orders-of-magnitude more quickly than other high-accuracy models.\nUsing CiMLoop, researchers can evaluate design choices at different levels of the CiM stack, co-design across all levels, fairly compare different implementations, and rapidly explore the design space.\n\nPaper \\(~~~~~\\) Code \\(~~~~~\\) Slides \\(~~~~~\\) Website"
+  },
+  {
+    "objectID": "posts/2023_thesis/post.html",
+    "href": "posts/2023_thesis/post.html",
+    "title": "Efficient, Accurate, and Flexible PIM Inference through Adaptable Low-Resolution Arithmetic! Master’s Thesis 2023",
+    "section": "",
+    "text": "\\(~\\)\nMaster’s thesis based on the RAELLA paper.\nProcessing-In-Memory (PIM) accelerators have the potential to efficiently run Deep Neural Network (DNN) inference by reducing costly data movement and by using resistive RAM (ReRAM) for efficient analog compute. Unfortunately, overall PIM accelerator efficiency and throughput are limited by area/energy-intensive analog-to-digital converters (ADCs). Furthermore, existing accelerators that reduce ADC area/energy do so by changing DNN weights or by using low-resolution ADCs that reduce output fidelity. These approaches harm DNN accuracy and/or require costly DNN retraining to compensate. To address these issues, this thesis explores tradeoffs around ADC area/energy and develops optimizations that can reduce ADC area/energy without retraining DNNs. We use these optimizations to develop a new PIM accelerator, RAELLA, which can adapt the architecture to each DNN. RAELLA lowers the resolution of computed analog values by encoding weights to produce near-zero analog values, adaptively slicing weights for each DNN layer, and dynamically slicing inputs through speculation and recovery. Low-resolution analog values allow RAELLA to both use efficient low-resolution ADCs and maintain accuracy without retraining, all while computing with fewer ADC converts. Compared to other low-accuracy-loss PIM accelerators, RAELLA increases energy efficiency by up to 4.9x and throughput by up to 3.3x. Compared to PIM accelerators that cause accuracy loss and retrain DNNs to recover, RAELLA achieves similar efficiency and throughput without expensive DNN retraining.\n\nPaper \\(~~~~~\\) Code \\(~~~~~\\) Slides"
+  },
+  {
+    "objectID": "posts/2023_pim_csail/post.html",
+    "href": "posts/2023_pim_csail/post.html",
+    "title": "Efficient AI Inference With Analog Processing In Memory. CSAIL Alliances Meet 2023",
+    "section": "",
+    "text": "\\(~\\)\nI was happy to be invited to speak at MIT’s CSAIL Alliances Meeting in June 2023. Here is a ten-minute talk based on the about how we can use analog processing-in-memory for high-accuray, low-energy deep neural network acceleration."
+  },
+  {
+    "objectID": "posts/2023_pim_csail/post.html#talk",
+    "href": "posts/2023_pim_csail/post.html#talk",
+    "title": "Efficient AI Inference With Analog Processing In Memory. CSAIL Alliances Meet 2023",
+    "section": "Talk",
+    "text": "Talk"
+  },
+  {
+    "objectID": "CV.html#education",
+    "href": "CV.html#education",
+    "title": "CV",
+    "section": "Education",
+    "text": "Education\n\n\n2021-2027 est. Ph.D. Electrical Engineering & Computer Science. Massachusetts Institute of Technology\n2021-2023 M.S. Electrical Engineering & Computer Science. Massachusetts Institute of Technology\n\n5.0/5.0 GPA\n\n2017-2021 B.S Computer Engineering, Purdue University West Lafayette\n\n3.97/4.0 GPA, Graduated Summa Cum Laude\n\n2017-2021 B.S Mathematics, Purdue University\n\n3.97/4.0 GPA, Graduated Summa Cum Laude"
+  },
+  {
+    "objectID": "CV.html#publications",
+    "href": "CV.html#publications",
+    "title": "CV",
+    "section": "Publications",
+    "text": "Publications"
+  },
+  {
+    "objectID": "CV.html#work-experience",
+    "href": "CV.html#work-experience",
+    "title": "CV",
+    "section": "Work Experience",
+    "text": "Work Experience\n\nMay-August 2020 Digital Hardware Intern, Qualcomm Technologies, Incorporated\n\nWorked with the digital design infrastructure team to develop processor-memory interface systems.\nDeveloped tools to automate digital design processes for processor-memory interface systems.\n\nMay-August 2019 Software and Controls Intern, Eaton Corporation\n\nDeveloped diagnostic software and automating scripts to improve testing process of semi-truck control software.\nAuthored tools for retrieval of memory contents and diagnosis of errors in semi-truck computer memory."
+  },
+  {
+    "objectID": "CV.html#teaching",
+    "href": "CV.html#teaching",
+    "title": "CV",
+    "section": "Teaching",
+    "text": "Teaching\n\n2024 Graduate Teaching Assistant, MIT 6.5930 Hardware Architectures for Deep Learning\n2021 Undergraduate Teaching Assistant, Purdue ECE 50863-EDX Computer Network Systems\n\nLed the design of new student programming projects based on cutting-edge computer network research.\nTested and modified student assignments for online instruction.\nDesigned systems to support Internet Systems Lab research. Implemented lightweight methods to enable transmission and sharing of flows over multiple tunnels in software-defined networks."
+  },
+  {
+    "objectID": "CV.html#selected-awards",
+    "href": "CV.html#selected-awards",
+    "title": "CV",
+    "section": "Selected Awards",
+    "text": "Selected Awards\n\n2024 Samsung Semiconductor Fellowship\n2024 ISPASS 2024 Best Paper Award: “CiMLoop: A Flexible, Accurate, and Fast Compute-In-Memory Modeling Tool”\n2022 MIT Siebels Scholar Fellowship\n2021 MIT Irwin Mark Jacobs and Joan Klein Jacobs Presidential Fellow\n2021 Purdue Undergraduate Excellence Award awarded for contributions in creating the ECE-50863 EDX Course\n2017 Purdue Fessenden Trott Scholarship\n2017 Purdue Presidential Scholarship"
+  },
+  {
+    "objectID": "CV.html#activities",
+    "href": "CV.html#activities",
+    "title": "CV",
+    "section": "Activities",
+    "text": "Activities\n\n2021-Present MIT Rock Climbing Team\n2021-Present MIT GSB Organizer\n\nSocial event organizer for the MIT Computer Science & Artificial Intelligence Laboratory (CSAIL).\n\n2021-2023 MIT Edgerton House Board Member and Resources Chair\n2029-2021 Purdue IEEE Remote Operated Vehicle Team\n\nDesigned control algorithms for autonomous submarine thruster systems. Enabled submarine to do a backflip for the first time in competition.\nDeveloped computer vision algorithms that enabled autonomous submarine to recognize and react to underwater objects.\n\n2018-2019 Purdue IEEE Aerial Robotics Team\n\nLead designer of collision-avoidance algorithms to pilot autonomous planes."
+  },
+  {
+    "objectID": "CV.html#publications-and-talks",
+    "href": "CV.html#publications-and-talks",
+    "title": "CV",
+    "section": "Publications and Talks",
+    "text": "Publications and Talks"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a Graduate Research Assistant at MIT advised by Profs. Vivienne Sze and Joel Emer in the EEMS group.\nMy research focuses on modeling and design of analog, compute-in-memory, and photonic deep neural network accelerators. Through cross-stack co-design, I work to develop lower-energy, higher-throughput systems.\n\n\n\n\n\\(~\\) \\(~\\)\n\nPublications and Talks\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nCiMLoop: A Flexible, Accurate, and Fast Compute-In-Memory Modeling Tool. ISPASS 2024\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2024\n\n\nTanner Andrulis, Vivienne Sze, Joel S. Emer\n\n\n\n\n\n\n\n\n\n\n\n\nArchitecture-Level Modeling of Photonic Deep Neural Network Accelerators. ISPASS 2024\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2024\n\n\nTanner Andrulis, Gohar Irfan Chaudhry, Vinith M. Suriyakumar, Joel S. Emer, Vivienne Sze\n\n\n\n\n\n\n\n\n\n\n\n\nModeling Analog-Digital-Converter Energy and Area for Compute-In-Memory Accelerator Design\n\n\n\n\n\n\n\n\n\n\n\nApr 9, 2024\n\n\nTanner Andrulis, Ruicong Chen, Hae-Seung Lee, Joel S. Emer, Vivienne Sze\n\n\n\n\n\n\n\n\n\n\n\n\nEfficient, Accurate, and Flexible PIM Inference through Adaptable Low-Resolution Arithmetic! Master’s Thesis 2023\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2023\n\n\nTanner Andrulis, Vivienne Sze, Joel S. Emer\n\n\n\n\n\n\n\n\n\n\n\n\nEfficient AI Inference With Analog Processing In Memory. CSAIL Alliances Meet 2023\n\n\n\n\n\n\n\n\n\n\n\nJun 27, 2023\n\n\nTanner Andrulis\n\n\n\n\n\n\n\n\n\n\n\n\nRAELLA: Reforming the Arithmetic for Efficient, Low-Resolution, and Low-Loss Analog PIM: No Retraining Required! ISCA 2023\n\n\n\n\n\n\n\n\n\n\n\nJun 17, 2023\n\n\nTanner Andrulis, Vivienne Sze, Joel S. Emer\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Email: My Last Name at mit.edu"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About",
+    "section": "",
+    "text": "I’m a Graduate Research Assistant at MIT advised by Profs. Vivienne Sze and Joel Emer in the EEMS group.\nMy research focuses on modeling and design of analog, compute-in-memory, and photonic deep neural network accelerators. Through cross-stack co-design, I work to develop lower-energy, higher-throughput systems.\n\n\n\n\n\\(~\\) \\(~\\)\n\nPublications and Talks\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nCiMLoop: A Flexible, Accurate, and Fast Compute-In-Memory Modeling Tool. ISPASS 2024\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2024\n\n\nTanner Andrulis, Vivienne Sze, Joel S. Emer\n\n\n\n\n\n\n\n\n\n\n\n\nArchitecture-Level Modeling of Photonic Deep Neural Network Accelerators. ISPASS 2024\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2024\n\n\nTanner Andrulis, Gohar Irfan Chaudhry, Vinith M. Suriyakumar, Joel S. Emer, Vivienne Sze\n\n\n\n\n\n\n\n\n\n\n\n\nModeling Analog-Digital-Converter Energy and Area for Compute-In-Memory Accelerator Design\n\n\n\n\n\n\n\n\n\n\n\nApr 9, 2024\n\n\nTanner Andrulis, Ruicong Chen, Hae-Seung Lee, Joel S. Emer, Vivienne Sze\n\n\n\n\n\n\n\n\n\n\n\n\nEfficient, Accurate, and Flexible PIM Inference through Adaptable Low-Resolution Arithmetic! Master’s Thesis 2023\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2023\n\n\nTanner Andrulis, Vivienne Sze, Joel S. Emer\n\n\n\n\n\n\n\n\n\n\n\n\nEfficient AI Inference With Analog Processing In Memory. CSAIL Alliances Meet 2023\n\n\n\n\n\n\n\n\n\n\n\nJun 27, 2023\n\n\nTanner Andrulis\n\n\n\n\n\n\n\n\n\n\n\n\nRAELLA: Reforming the Arithmetic for Efficient, Low-Resolution, and Low-Loss Analog PIM: No Retraining Required! ISCA 2023\n\n\n\n\n\n\n\n\n\n\n\nJun 17, 2023\n\n\nTanner Andrulis, Vivienne Sze, Joel S. Emer\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2023_raella/post.html",
+    "href": "posts/2023_raella/post.html",
+    "title": "RAELLA: Reforming the Arithmetic for Efficient, Low-Resolution, and Low-Loss Analog PIM: No Retraining Required! ISCA 2023",
+    "section": "",
+    "text": "\\(~\\)\nProcessing-In-Memory (PIM) accelerators have the potential to efficiently run Deep Neural Network (DNN) inference by reducing costly data movement and by using resistive RAM (ReRAM) for efficient analog compute. Unfortunately, overall PIM accelerator efficiency is limited by energy-intensive analog-to-digital converters (ADCs). Furthermore, existing accelerators that reduce ADC cost do so by changing DNN weights or by using low-resolution ADCs that reduce output fidelity. These strategies harm DNN accuracy and/or require costly DNN retraining to compensate.\nTo address these issues, we propose the RAELLA architecture. RAELLA adapts the architecture to each DNN; it lowers the resolution of computed analog values by encoding weights to produce near-zero analog values, adaptively slicing weights for each DNN layer, and dynamically slicing inputs through speculation and recovery. Low-resolution analog values allow RAELLA to both use efficient low-resolution ADCs and maintain accuracy without retraining, all while computing with fewer ADC converts.\nCompared to other low-accuracy-loss PIM accelerators, RAELLA increases energy efficiency by up to 4.9× and throughput by up to 3.3×. Compared to PIM accelerators that cause accuracy loss and retrain DNNs to recover, RAELLA achieves similar efficiency and throughput without expensive DNN retraining."
+  },
+  {
+    "objectID": "posts/2023_raella/post.html#lightning-talk",
+    "href": "posts/2023_raella/post.html#lightning-talk",
+    "title": "RAELLA: Reforming the Arithmetic for Efficient, Low-Resolution, and Low-Loss Analog PIM: No Retraining Required! ISCA 2023",
+    "section": "Lightning Talk",
+    "text": "Lightning Talk"
+  },
+  {
+    "objectID": "posts/2024_adc_modeling/post.html",
+    "href": "posts/2024_adc_modeling/post.html",
+    "title": "Modeling Analog-Digital-Converter Energy and Area for Compute-In-Memory Accelerator Design",
+    "section": "",
+    "text": "\\(~\\)\nAnalog Compute-in-Memory (CiM) accelerators use analog-digital converters (ADCs) to read the analog values that they compute. ADCs can consume significant energy and area, so architecture-level ADC decisions such as ADC resolution or number of ADCs can significantly impact overall CiM accelerator energy and area. Therefore, modeling how architecture-level decisions affect ADC energy and area is critical for performing architecture-level design space exploration of CiM accelerators. This work presents an open-source architecture-level model to estimate ADC energy and area. To enable fast design space exploration, the model uses only architecture-level attributes while abstracting circuit-level details. Our model enables researchers to quickly and easily model key architecture-level tradeoffs in accelerators that use ADCs.\n\nPaper \\(~~~~~\\) Code"
+  },
+  {
+    "objectID": "posts/2024_photonics_modeling/post.html",
+    "href": "posts/2024_photonics_modeling/post.html",
+    "title": "Architecture-Level Modeling of Photonic Deep Neural Network Accelerators. ISPASS 2024",
+    "section": "",
+    "text": "\\(~\\)\nPhotonics is a promising technology to accelerate Deep Neural Networks as it can use optical interconnects to reduce data movement energy and it enables low-energy, high-throughput optical-analog computations. To realize these benefits in a full system (accelerator + DRAM), designers must ensure that the benefits of using the electrical, optical, analog, and digital domains exceed the costs of converting data between domains. Designers must also consider system-level energy costs such as data fetch from DRAM. Converting data and accessing DRAM can consume significant energy, so to evaluate and explore the photonic system space, there is a need for a tool that can model these full-system considerations.\nIn this work, we show that similarities between Compute-in-Memory (CiM) and photonics let us use CiM system modeling tools to accurately model photonics systems. Bringing modeling tools to photonics enables evaluation of photonic research in a full-system context, rapid design space exploration, co-design, and comparison between systems.\nUsing our open-source model, we show that cross-domain conversion and DRAM can consume a significant portion of photonic system energy. We then demonstrate optimizations that reduce conversions and DRAM accesses to improve photonic system energy efficiency by up to 3x.\n\nPaper \\(~~~~~\\) Code \\(~~~~~\\) Poster"
+  }
+]

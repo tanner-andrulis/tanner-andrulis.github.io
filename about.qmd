@@ -1,0 +1,54 @@
+---
+title: "About"
+# image: profile.png
+page-layout: full
+about:
+  template: solana
+  # links:
+  #   - icon: linkedin
+  #     text: LinkedIn
+  #     href: https://www.linkedin.com/in/tanner-andrulis/
+  #   - icon: github
+  #     text: Github
+  #     href: https://github.com/tanner-andrulis
+# listing:
+#   contents: posts
+#   sort: "date desc"`
+#   type: default
+#   categories: true
+listing:
+  id: sample-listings
+  contents: posts
+  sort: "date desc"
+  type: default
+  # categories: true
+  sort-ui: true
+  filter-ui: true
+
+---
+
+::: columns
+::: {.column width="40%"}
+![](profile.png)
+:::
+::: {.column width="60%"}
+I'm a Graduate Research Assistant at MIT advised by Profs. Vivienne Sze and Joel
+Emer in the EEMS group. 
+
+My research focuses on modeling and design of analog, compute-in-memory, and
+photonic deep neural network accelerators. Through cross-stack co-design, I work
+to develop lower-energy, higher-throughput systems.
+:::
+:::
+
+<!-- ::: {#sample-listings}
+::: -->
+
+<!-- <hr style="border:2px solid gray"> -->
+
+$~$
+$~$
+
+# Publications and Talks
+
+---

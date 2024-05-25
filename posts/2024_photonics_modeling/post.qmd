@@ -1,0 +1,24 @@
+---
+title: "Architecture-Level Modeling of Photonic Deep Neural Network Accelerators. ISPASS 2024"
+author: "Tanner Andrulis, Gohar Irfan Chaudhry, Vinith M. Suriyakumar, Joel S. Emer, Vivienne Sze"
+date: "5/07/2024"
+categories:
+  - Publications
+  - Photonics
+  - Tools
+---
+
+$~$
+
+Photonics is a promising technology to accelerate Deep Neural Networks as it can use optical interconnects to reduce data movement energy and it enables low-energy, high-throughput optical-analog computations. To realize these benefits in a full system (accelerator + DRAM), designers must ensure that the benefits of using the electrical, optical, analog, and digital domains exceed the costs of converting data between domains. Designers must also consider system-level energy costs such as data fetch from DRAM. Converting data and accessing DRAM can consume significant energy, so to evaluate and explore the photonic system space, there is a need for a tool that can model these full-system considerations.
+
+In this work, we show that similarities between Compute-in-Memory (CiM) and photonics let us use CiM system modeling tools to accurately model photonics systems. Bringing modeling tools to photonics enables evaluation of photonic research in a full-system context, rapid design space exploration, co-design, and comparison between systems.
+
+Using our open-source model, we show that cross-domain conversion and DRAM can consume a significant portion of photonic system energy. We then demonstrate optimizations that reduce conversions and DRAM accesses to improve photonic system energy efficiency by up to 3x.
+
+
+<div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+[Paper](https://arxiv.org/abs/2405.07266) $~~~~~$ [Code](https://github.com/mit-emze/cimloop) $~~~~~$ [Poster](poster.pdf)
+</div>
+
+![](image.png)

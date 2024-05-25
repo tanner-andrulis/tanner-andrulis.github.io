@@ -1,0 +1,26 @@
+---
+title: "Efficient AI Inference With Analog Processing In Memory. CSAIL Alliances Meet 2023"
+# description: "Post description"
+author: "Tanner Andrulis"
+date: "6/27/2023"
+categories:
+  - Talks
+  - Compute-In-Memory
+  - Architectures
+---
+
+$~$
+
+I was happy to be invited to speak at MIT's CSAIL Alliances Meeting in June 2023. Here is a ten-minute talk based on the about how we can use analog processing-in-memory for high-accuray, low-energy deep neural network acceleration. 
+
+<div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+[Article](https://www.forbes.com/sites/johnwerner/2023/11/23/revolutionizing-ai-work-with-new-hardware-structures/?sh=21a7e93142a7) $~~~~~$ $~~~~~$ [Slides](talk.pdf)
+</div>
+
+![](image.png)
+
+---
+
+## Talk
+
+<iframe style="display: block; margin: auto;"  width="560" height="315" src="https://www.youtube.com/embed/b1F1h1U3vvs?si=BrIwTeK4pCtdK08G" title="YouTube video player" frameborder="0" display="block" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

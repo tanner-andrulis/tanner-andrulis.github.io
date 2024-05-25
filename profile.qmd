@@ -1,0 +1,5 @@
+---
+image: profile.jpg
+about:
+  template: solana
+---

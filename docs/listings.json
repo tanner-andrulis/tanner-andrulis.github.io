@@ -1,0 +1,35 @@
+[
+  {
+    "listing": "/CV.html",
+    "items": [
+      "/posts/2024_cimloop/post.html",
+      "/posts/2024_photonics_modeling/post.html",
+      "/posts/2024_adc_modeling/post.html",
+      "/posts/2023_thesis/post.html",
+      "/posts/2023_pim_csail/post.html",
+      "/posts/2023_raella/post.html"
+    ]
+  },
+  {
+    "listing": "/about.html",
+    "items": [
+      "/posts/2024_cimloop/post.html",
+      "/posts/2024_photonics_modeling/post.html",
+      "/posts/2024_adc_modeling/post.html",
+      "/posts/2023_thesis/post.html",
+      "/posts/2023_pim_csail/post.html",
+      "/posts/2023_raella/post.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/2024_cimloop/post.html",
+      "/posts/2024_photonics_modeling/post.html",
+      "/posts/2024_adc_modeling/post.html",
+      "/posts/2023_thesis/post.html",
+      "/posts/2023_pim_csail/post.html",
+      "/posts/2023_raella/post.html"
+    ]
+  }
+]
