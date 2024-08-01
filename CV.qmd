@@ -18,6 +18,8 @@ listing:
 <hr style="border:2px solid gray">
 
 - **2021-2027 *est.*** Ph.D. Electrical Engineering & Computer Science. Massachusetts Institute of Technology
+- **2023** Certificate in Entrepreneurship Leadership. Santa Clara University.
+- **2023** Forklift Certified
 - **2021-2023** M.S. Electrical Engineering & Computer Science. Massachusetts Institute of Technology
   -	5.0/5.0 GPA
 - **2017-2021** B.S Computer Engineering, Purdue University West Lafayette
@@ -25,12 +27,9 @@ listing:
 - **2017-2021** B.S Mathematics, Purdue University
   - 3.97/4.0 GPA, Graduated Summa Cum Laude
 
-## Publications
-
-<hr style="border:2px solid gray">
-
 ## Work Experience
 
+- **May-August 2024** research Intern, Nvidia
 - **May-August 2020** Digital Hardware Intern, Qualcomm Technologies, Incorporated
   - Worked with the digital design infrastructure team to develop processor-memory interface systems.
   -	Developed tools to automate digital design processes for processor-memory interface systems.
