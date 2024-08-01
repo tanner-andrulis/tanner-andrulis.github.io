@@ -1,0 +1,56 @@
+{
+  "about.qmd": {
+    "about.html": "7b87e146"
+  },
+  "index.qmd": {
+    "index.html": "5b11f77a"
+  },
+  "profile.qmd": {
+    "profile.html": "31143ed7"
+  },
+  "posts/raella.qmd": {
+    "raella.html": "f89601a6"
+  },
+  "posts/raella/raella.qmd": {
+    "raella.html": "047b586d"
+  },
+  "posts/cimloop/cimloop.qmd": {
+    "cimloop.html": "ea4f0337"
+  },
+  "posts/2023_raella/raella.qmd": {
+    "raella.html": "89361cab"
+  },
+  "posts/2024_adc_modeling/raella.qmd": {
+    "raella.html": "efa7487c"
+  },
+  "posts/2024_cimloop/cimloop.qmd": {
+    "cimloop.html": "020b8a63"
+  },
+  "posts/2023_raella/post.qmd": {
+    "post.html": "b67fa389"
+  },
+  "posts/2024_adc_modeling/post.qmd": {
+    "post.html": "d884e670"
+  },
+  "posts/2024_cimloop/post.qmd": {
+    "post.html": "4618b208"
+  },
+  "posts/2024_photonics_modeling/post.qmd": {
+    "post.html": "bf3a08fb"
+  },
+  "awards.qmd": {
+    "awards.html": "84ffae59"
+  },
+  "CV.qmd": {
+    "CV.html": "7c9fa9e9"
+  },
+  "posts/2023_thesis/post.qmd": {
+    "post.html": "8d32cce3"
+  },
+  "posts/2023_pim_csail/post.qmd": {
+    "post.html": "48fc6d79"
+  },
+  "contact.qmd": {
+    "contact.html": "42634b73"
+  }
+}
