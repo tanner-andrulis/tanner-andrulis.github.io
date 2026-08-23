@@ -1,0 +1,55 @@
+---
+import { Image } from "astro:assets";
+import Base from "../layouts/Base.astro";
+import Byline from "../components/Byline.astro";
+import profile from "../assets/profile.jpg";
+import { figure, posts } from "../lib/posts";
+---
+
+<Base>
+  <section class="hero">
+    <Image src={profile} alt="Tanner Andrulis" loading="eager" />
+    <div class="bio">
+      <h1>Tanner Andrulis</h1>
+      <p class="role">Ph.D. Student, MIT EECS &middot; EEMS Group</p>
+      <p>
+        I'm a fifth-year Ph.D. student at MIT, advised by Profs. <a
+          href="https://eems.mit.edu/">Vivienne Sze</a
+        > and <a href="https://people.csail.mit.edu/emer/">Joel Emer</a>.
+      </p>
+      <p>
+        My research is in the modeling and design of specialized accelerators for machine
+        learning. My work has covered novel compute paradigms, including analog,
+        compute-in-memory, optical, and superconducting accelerators. Currently I'm
+        building tools that optimally schedule deep neural network workloads onto
+        specialized accelerators, and applying those tools to novel and heterogeneous
+        systems.
+      </p>
+    </div>
+  </section>
+
+  <h2 id="publications">Publications and Talks</h2>
+
+  <ul class="pubs">
+    {
+      posts.map(({ frontmatter: f, url }) => {
+        const fig = figure(url!);
+        return (
+          <li class:list={["pub", { "no-figure": !fig }]}>
+            {fig && (
+              <div class="pub-figure">
+                <Image src={fig} alt="" fit="contain" loading="lazy" />
+              </div>
+            )}
+            <div>
+              <h3>
+                <a href={url}>{f.title}</a>
+              </h3>
+              <Byline {...f} />
+            </div>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Base>

@@ -1,0 +1,25 @@
+---
+import Base from "./Base.astro";
+import Byline from "../components/Byline.astro";
+import { posts } from "../lib/posts";
+
+const { title, description } = Astro.props.frontmatter;
+---
+
+<Base {title} {description}>
+  <div class="cv">
+    <slot />
+
+    <h2>Publications and Talks</h2>
+    <ul>
+      {
+        posts.map(({ frontmatter: f, url }) => (
+          <li>
+            <a href={url}>{f.title}</a>
+            <Byline {...f} />
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Base>

@@ -1,0 +1,70 @@
+---
+import "../styles/global.css";
+
+// Works both as an .astro layout (`title` prop) and a Markdown layout (frontmatter).
+const { title, description } = Astro.props.frontmatter ?? Astro.props;
+
+const nav = [
+  ["/", "Home"],
+  ["/cv", "CV"],
+  ["/contact", "Contact"],
+  ["https://scholar.google.com/citations?user=XfB5uRsAAAAJ", "Google Scholar"],
+  ["https://github.com/tanner-andrulis", "GitHub"],
+  ["https://www.linkedin.com/in/tanner-andrulis/", "LinkedIn"],
+];
+
+const here = Astro.url.pathname.replace(/\/$/, "") || "/";
+const blurb =
+  description ??
+  "Tanner Andrulis is a Ph.D. student at MIT working on the modeling, design, and " +
+    "optimal mapping of specialized accelerators for machine learning.";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <title>{title ? `${title} | Tanner Andrulis` : "Tanner Andrulis"}</title>
+    <meta name="description" content={blurb} />
+    <meta property="og:title" content={title ?? "Tanner Andrulis"} />
+    <meta property="og:description" content={blurb} />
+    <meta property="og:type" content="website" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">Tanner Andrulis</a>
+        <nav aria-label="Main">
+          <ul>
+            {
+              nav.map(([href, label]) => (
+                <li>
+                  <a href={href} aria-current={href === here ? "page" : null}>
+                    {label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>Tanner Andrulis &middot; MIT EEMS Group</span>
+        <span>Email: <em>my last name</em> at mit.edu</span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import Base from "./Base.astro";
+import Byline from "../components/Byline.astro";
+import { figure, type Publication } from "../lib/posts";
+
+const { url, frontmatter: f } = Astro.props as { url: string; frontmatter: Publication };
+const fig = figure(url);
+---
+
+<Base title={f.title}>
+  <article>
+    <header class="post-header">
+      <h1>{f.title}</h1>
+      <Byline {...f} />
+    </header>
+
+    <slot />
+
+    {
+      f.links && (
+        <ul class="links">
+          {Object.entries(f.links).map(([label, href]) => (
+            <li>
+              <a href={href}>{label}</a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    {
+      fig && (
+        <figure>
+          <Image src={fig} alt={`Figure from "${f.title}"`} />
+        </figure>
+      )
+    }
+
+    {
+      f.video && (
+        <div class="video">
+          <iframe src={f.video} title={`Talk: ${f.title}`} loading="lazy" allowfullscreen />
+        </div>
+      )
+    }
+
+    <a class="back" href="/">&larr; All publications and talks</a>
+  </article>
+</Base>

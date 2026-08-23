@@ -1,0 +1,13 @@
+---
+import { monthYear, type Publication } from "../lib/posts";
+
+const { authors, venue, date, categories = [], award } = Astro.props as Publication;
+---
+
+<p class="authors">{authors}</p>
+<p class="meta">
+  {venue && <span class="venue">{venue}</span>}
+  {date && <span>{monthYear(date)}</span>}
+  {categories.map((c) => <span class="tag">{c}</span>)}
+  {award && <span class="award">{award}</span>}
+</p>
