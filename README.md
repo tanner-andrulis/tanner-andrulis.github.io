@@ -84,5 +84,7 @@ The abstract goes here.
 
 The previous Quarto site published `.html` URLs. `src/pages/[...legacy].html.ts`
 generates a redirect at each of them (`/CV.html`, `/posts/<slug>/post.html`, …) so
-existing links and search results keep working. `make test` fails if any of those
-redirects goes missing.
+existing links and search results keep working. GitHub Pages serves `x.html` for a bare
+`/x` before `x/index.html`, so those redirect files would shadow the real pages: internal
+links therefore always end in `/` (`trailingSlash: "always"`), and `make test` fails on a
+missing redirect or on any link that lands on a redirect instead of a page.

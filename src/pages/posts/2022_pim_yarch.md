@@ -16,4 +16,4 @@ movement costs of deep neural networks, but research has largely evaluated devic
 circuits, and architecture in isolation. This talk covered early work on evaluating PIM at
 the architecture level, so that an innovation at any level of the stack can be assessed in
 the context of a full accelerator. That direction led to
-[CiMLoop](/posts/2024_cimloop).
+[CiMLoop](/posts/2024_cimloop/).

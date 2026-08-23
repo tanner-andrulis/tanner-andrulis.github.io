@@ -31,37 +31,45 @@ const required = ["index.html", "cv/index.html", "contact/index.html", "sitemap-
 for (const want of required) {
   if (!existsSync(join(OUT, want))) warn(`missing page: ${want}`);
 }
+for (const png of readdirSync("src/assets/posts")) {
+  const page = join(OUT, "posts", png.replace(/\.png$/, ""), "index.html");
+  if (existsSync(page) && !readFileSync(page, "utf8").includes("<img")) {
+    warn(`figure not rendered: ${relative(OUT, page)}`);
+  }
+}
 
-// 2. The old Quarto .html URLs must still exist, as files, and redirect.
+// GitHub Pages serves a bare `/x` from `x.html` before `x/index.html`. Mimic that,
+// returning the file a URL lands on, or undefined.
+const served = (url) => {
+  const path = join(OUT, decodeURIComponent(url.split(/[?#]/)[0]));
+  return [path, `${path}.html`, join(path, "index.html")].find(
+    (f) => existsSync(f) && statSync(f).isFile(),
+  );
+};
+const redirectTarget = (file) =>
+  readFileSync(file, "utf8").match(/http-equiv="refresh" content="0;url=([^"]+)"/)?.[1];
+
+// 2. The old Quarto .html URLs must still exist and redirect to a real page, not to
+// themselves (a bare target like `/contact` would land back on `contact.html`).
 for (const want of ["CV.html", "contact.html", "about.html", "profile.html",
                     ...slugs.map((s) => `posts/${s}/post.html`)]) {
-  const target = join(OUT, want);
-  if (!existsSync(target) || !statSync(target).isFile()) warn(`missing redirect: ${want}`);
-  else if (!readFileSync(target, "utf8").includes('http-equiv="refresh"')) {
-    warn(`redirect does not redirect: ${want}`);
-  }
+  const to = existsSync(join(OUT, want)) && redirectTarget(join(OUT, want));
+  if (!to) warn(`missing redirect: ${want}`);
+  else if (!served(to) || redirectTarget(served(to))) warn(`redirect loops or dangles: ${want} -> ${to}`);
 }
 
 // 3. Real pages must carry a title and actual content.
 for (const page of pages) {
   const html = readFileSync(page, "utf8");
   const rel = relative(OUT, page);
-  if (html.includes('http-equiv="refresh"')) continue;
+  if (redirectTarget(page)) continue;
   if (!/<title>[^<]+<\/title>/.test(html)) warn(`no <title>: ${rel}`);
   const body = html.match(/<main[^>]*>([\s\S]*)<\/main>/)?.[1] ?? "";
   const text = body.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
   if (text.length < 80) warn(`little or no content in <main>: ${rel}`);
 }
 
-// 4. Internal links and assets must resolve to something on disk.
-const resolves = (url) => {
-  const target = join(OUT, decodeURIComponent(url.split(/[?#]/)[0]));
-  return (
-    existsSync(target) &&
-    (statSync(target).isFile() || existsSync(join(target, "index.html")))
-  );
-};
-
+// 4. Internal links and assets must land on a real file, never on a redirect.
 let checked = 0;
 const external = new Set();
 for (const page of pages) {
@@ -71,7 +79,8 @@ for (const page of pages) {
     if (/^https?:\/\//.test(url)) external.add(url);
     if (!url.startsWith("/") || url.startsWith("//")) continue;
     checked++;
-    if (!resolves(url)) warn(`broken link in ${rel}: ${url}`);
+    const file = served(url);
+    if (!file || redirectTarget(file)) warn(`broken or redirected link in ${rel}: ${url}`);
   }
 }
 

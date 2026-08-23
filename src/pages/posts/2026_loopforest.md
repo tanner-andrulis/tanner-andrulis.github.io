@@ -10,4 +10,4 @@ LoopForest expands the space of fused mappings available to tensor algebra accel
 exposing mapping choices that reduce off-chip data movement and on-chip memory usage.
 
 This work is currently under submission. A preprint is not yet public &mdash; please
-[get in touch](/contact) if you would like to know more.
+[get in touch](/contact/) if you would like to know more.

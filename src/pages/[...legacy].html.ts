@@ -4,12 +4,12 @@ import type { APIRoute } from "astro";
 import { posts } from "../lib/posts";
 
 const legacy: Record<string, string> = {
-  CV: "/cv",
-  contact: "/contact",
+  CV: "/cv/",
+  contact: "/contact/",
   about: "/",
   profile: "/",
   // Markdown pages always have a url.
-  ...Object.fromEntries(posts.map((p) => [`${p.url!.slice(1)}/post`, p.url!])),
+  ...Object.fromEntries(posts.map((p) => [`${p.url!.slice(1)}post`, p.url!])),
 };
 
 export const getStaticPaths = () =>

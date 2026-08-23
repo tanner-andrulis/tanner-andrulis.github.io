@@ -6,14 +6,13 @@ const { title, description } = Astro.props.frontmatter ?? Astro.props;
 
 const nav = [
   ["/", "Home"],
-  ["/cv", "CV"],
-  ["/contact", "Contact"],
+  ["/cv/", "CV"],
+  ["/contact/", "Contact"],
   ["https://scholar.google.com/citations?user=XfB5uRsAAAAJ", "Google Scholar"],
   ["https://github.com/tanner-andrulis", "GitHub"],
   ["https://www.linkedin.com/in/tanner-andrulis/", "LinkedIn"],
 ];
 
-const here = Astro.url.pathname.replace(/\/$/, "") || "/";
 const blurb =
   description ??
   "Tanner Andrulis is a Ph.D. student at MIT working on the modeling, design, and " +
@@ -43,7 +42,7 @@ const blurb =
             {
               nav.map(([href, label]) => (
                 <li>
-                  <a href={href} aria-current={href === here ? "page" : null}>
+                  <a href={href} aria-current={href === Astro.url.pathname ? "page" : null}>
                     {label}
                   </a>
                 </li>

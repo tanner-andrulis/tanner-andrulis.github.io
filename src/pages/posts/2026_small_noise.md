@@ -10,4 +10,4 @@ A fast and precise method for estimating the accuracy loss that analog compute-i
 noise causes in deep neural network inference.
 
 This work is currently under submission. A preprint is not yet public &mdash; please
-[get in touch](/contact) if you would like to know more.
+[get in touch](/contact/) if you would like to know more.

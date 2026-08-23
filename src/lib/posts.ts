@@ -1,3 +1,4 @@
+import { basename } from "node:path";
 import type { MarkdownInstance } from "astro";
 
 export type Publication = {
@@ -18,7 +19,7 @@ const figures = import.meta.glob<ImageMetadata>("../assets/posts/*.png", {
 });
 
 /** Optimized figure for the post at `url`, if src/assets/posts/<slug>.png exists. */
-export const figure = (url: string) => figures[`../assets/posts/${url.split("/").pop()}.png`];
+export const figure = (url: string) => figures[`../assets/posts/${basename(url)}.png`];
 
 // Unpublished work has no public date, so it sorts to the top as newest.
 const sortKey = (p: MarkdownInstance<Publication>) =>
